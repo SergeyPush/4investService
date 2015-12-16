@@ -1,4 +1,4 @@
-package test4invest;
+package test4invest.LOGIN_TESTS;
 
 import Pages.LandingPage;
 import Pages.LoginFormPage;
@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Condition.*;
 /**
  * Created by sergey on 16.12.15.
  */
-public class Test_001_OPEN_LOGIN_FORM_ENG {
+public class Test_001_LOGIN_SUCCESSFULLY_ENG {
 
     String BaseURL = "https://www.4invest.net/";
 

@@ -3,8 +3,11 @@
     <test name="New Landing Tests">
         <classes>
 
-            <class name="test4invest.Test_001_OPEN_LOGIN_FORM_ENG"></class>
-            <class name="test4invest.Test_001_OPEN_LOGIN_FORM_RUS"></class>
+            <class name="test4invest.LOGIN_TESTS.Test_001_LOGIN_SUCCESSFULLY_ENG"></class>
+            <class name="test4invest.LOGIN_TESTS.Test_001_LOGIN_SUCCESSFULLY_RUS"></class>
+
+            <class name="test4invest.LOGIN_TESTS.Test_002_LOGIN_WRONG_PASS_ENG"></class>
+            <class name="test4invest.LOGIN_TESTS.Test_002_LOGIN_WRONG_PASS_RUS"></class>
 
         </classes>
     </test>

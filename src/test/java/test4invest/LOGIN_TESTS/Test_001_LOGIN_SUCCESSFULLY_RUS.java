@@ -1,18 +1,17 @@
-package test4invest;
+package test4invest.LOGIN_TESTS;
 
 import Pages.LandingPage;
 import Pages.LoginFormPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
-
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 /**
  * Created by sergey on 16.12.15.
  */
-public class Test_001_OPEN_LOGIN_FORM_RUS {
+public class Test_001_LOGIN_SUCCESSFULLY_RUS {
 
     String BaseURL = "https://www.4invest.net/";
 
@@ -21,7 +20,6 @@ public class Test_001_OPEN_LOGIN_FORM_RUS {
     public void testOpenLoginForm() throws Exception {
 
         open(BaseURL);
-        LandingPage.selectRussianLang();
         LandingPage.clickLoginButton();
         LoginFormPage.enterCredentials("spushkovskiy", "pass4invest");
         LoginFormPage.clickLoginButton();

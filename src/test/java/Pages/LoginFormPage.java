@@ -15,8 +15,8 @@ public class LoginFormPage {
     public static String LoginButton = "button-1946-btnInnerEl";
 
     public static void enterCredentials(String login, String pass) {
-        $(By.name(LoginField)).shouldBe(visible).sendKeys(login);
-        $(By.name(PasswordField)).shouldBe(visible).sendKeys(pass);
+        $(By.name(LoginField)).waitUntil(visible, 10000).shouldBe(visible).sendKeys(login);
+        $(By.name(PasswordField)).waitUntil(visible, 10000).shouldBe(visible).sendKeys(pass);
     }
 
     public static void clickLoginButton() {
