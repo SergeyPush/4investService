@@ -56,7 +56,7 @@
                     <configuration>
                         <testFailureIgnore>true</testFailureIgnore>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/GoANtifraudLanding.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/4investLanding.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>

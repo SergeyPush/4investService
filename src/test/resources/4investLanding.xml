@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Тестирование нового 4invest" parallel="classes" thread-count="1">
+    <test name="New Landing Tests">
+        <classes>
+
+            <class name="test4invest.Test_001_OPEN_LOGIN_FORM_ENG"></class>
+            <class name="test4invest.Test_001_OPEN_LOGIN_FORM_RUS"></class>
+
+        </classes>
+    </test>
+</suite>
