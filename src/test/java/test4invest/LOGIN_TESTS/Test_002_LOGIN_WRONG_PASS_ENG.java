@@ -4,6 +4,7 @@ import Pages.LandingPage;
 import Pages.LoginFormPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -15,6 +16,7 @@ public class Test_002_LOGIN_WRONG_PASS_ENG {
     String BaseURL = "https://www.4invest.net";
 
     @Test
+    @Title("Проверка ввода неправильного пароля ENG")
     public void testEnterInvalidPassword() throws Exception {
         open(BaseURL);
         LandingPage.selectEnglishLang();
