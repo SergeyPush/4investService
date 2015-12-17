@@ -1,4 +1,4 @@
-package Pages;
+package Pages4invest;
 
 import org.openqa.selenium.By;
 

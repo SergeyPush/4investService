@@ -1,7 +1,7 @@
 package test4invest.LOGIN_TESTS;
 
-import Pages.LandingPage;
-import Pages.LoginFormPage;
+import Pages4invest.LandingPage;
+import Pages4invest.LoginFormPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -20,6 +20,7 @@ public class Test_001_LOGIN_SUCCESSFULLY_RUS {
     public void testOpenLoginForm() throws Exception {
 
         open(BaseURL);
+        LandingPage.selectRussianLang();
         LandingPage.clickLoginButton();
         LoginFormPage.enterCredentials("spushkovskiy", "pass4invest");
         LoginFormPage.clickLoginButton();

@@ -1,7 +1,7 @@
 package test4invest.LOGIN_TESTS;
 
-import Pages.LandingPage;
-import Pages.LoginFormPage;
+import Pages4invest.LandingPage;
+import Pages4invest.LoginFormPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -24,7 +24,7 @@ public class Test_002_LOGIN_WRONG_PASS_ENG {
         LoginFormPage.enterCredentials("spushkovskiy", "123");
         LoginFormPage.clickLoginButton();
 
-        $(By.cssSelector(".x-list-plain>li")).shouldBe(visible).shouldHave(text("Incorrect login or password"));
+        $(By.xpath("//ul[@class='x-list-plain']/li")).shouldBe(visible).shouldHave(text("Incorrect login or password"));
 
         close();
     }
